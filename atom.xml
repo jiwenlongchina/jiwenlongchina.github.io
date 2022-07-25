@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jiwenlongchina.github.io</id>
+    <title>Ji Wenlong</title>
+    <updated>2022-07-25T15:29:18.951Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jiwenlongchina.github.io"/>
+    <link rel="self" href="https://jiwenlongchina.github.io/atom.xml"/>
+    <subtitle>学好计算机重要的是理解</subtitle>
+    <logo>https://jiwenlongchina.github.io/images/avatar.png</logo>
+    <icon>https://jiwenlongchina.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Ji Wenlong</rights>
+    <entry>
+        <title type="html"><![CDATA[浮点数运算]]></title>
+        <id>https://jiwenlongchina.github.io/post/fu-dian-shu-yun-suan/</id>
+        <link href="https://jiwenlongchina.github.io/post/fu-dian-shu-yun-suan/">
+        </link>
+        <updated>2022-07-25T15:19:32.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="误差">误差</h4>
+<p>有的浮点数不能被计算机准确表示，因此浮点数运算时可能会出现误差</p>
+<h4 id="浮点数在计算机中存储方式">浮点数在计算机中存储方式</h4>
+<p>浮点数在计算机中的存储按照表示遵循IEEE-754标准<br>
+浮点数转为存储在计算机中二进制的步骤</p>
+<ol>
+<li>十进制浮点数转为二进制数</li>
+<li>转换的二进制数采用科学计数法，得到指数，尾数</li>
+<li>指数+127的二进制结果作为阶码，尾数作为尾码</li>
+<li>尾码+阶码+符号位便是浮点数在计算机中的表示</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[整数运算]]></title>
+        <id>https://jiwenlongchina.github.io/post/zheng-shu-yun-suan/</id>
+        <link href="https://jiwenlongchina.github.io/post/zheng-shu-yun-suan/">
+        </link>
+        <updated>2022-07-25T14:36:18.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="溢出问题">溢出问题</h4>
+<p>要特别注意，整数由于存在范围限制，如果计算结果超出了范围，就会产生溢出，而溢出不会出错，却会得到一个奇怪的结果</p>
+<h4 id="移位运算">移位运算</h4>
+<p>负数左移运算，符号位不会被覆盖，后面补零<br>
+正数左移运算，符号位会被覆盖，后面补零<br>
+右移运算，符号位不动，在符号位后补零<br>
+无符号右移运算（&gt;&gt;&gt;），符号位跟着移动，没有无符号左移</p>
+<h4 id="位运算">位运算</h4>
+<p>与运算（&amp;），两个都是1，结果为1<br>
+或运算（|），有一个是1，结果为1<br>
+非运算（~），结果是相反<br>
+异或运算（^），两个不同，结果为1</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[知识图谱的实体关系学习]]></title>
+        <id>https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-shi-ti-guan-xi-xue-xi/</id>
+        <link href="https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-shi-ti-guan-xi-xue-xi/">
+        </link>
+        <updated>2022-07-12T01:33:42.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="1-实体关系学习">1 实体关系学习</h4>
+<p>实体关系学习宏观上指从文本中挖掘出实体之间的关系，也称关系抽取<br>
+具体研究内容：</p>
+<ol>
+<li>从限定域（关系类型有预先定义）中使用有监督方式做关系抽取，研究如何获取更多表征语义关系的特征</li>
+<li>从限定域中使用弱监督方式做关系抽取，研究如何降低自动生成语料中的噪声</li>
+<li>从开放域（没有事先定义关系类型）使用使用无监督方式关系抽取，研究如何自动抽取关系三元组</li>
+</ol>
+<h4 id="2-实体关系学习的应用">2 实体关系学习的应用</h4>
+<p>应用在大规模知识图谱的自动构建，对其他信息获取技术的支持，自然语言的理解</p>
+<h4 id="3-实体关系学习的挑战">3 实体关系学习的挑战</h4>
+<h5 id="31-实体关系的复杂性">3.1 实体关系的复杂性</h5>
+<p>实体之间可能有多个关系，有的关系可能一直存在，有的关系可能有时间性</p>
+<h5 id="32-关系表达的隐含性">3.2 关系表达的隐含性</h5>
+<p>文本中有的语句可能具有隐藏含义，如平常说的话里有话</p>
+<h5 id="33-自然语言表达的多样性">3.3 自然语言表达的多样性</h5>
+<p>实体之间的关系可能有多种表达方式，不同的方式表达着同一种关系，例如被字句和把字句</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[知识图谱的实体识别与链接]]></title>
+        <id>https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-shi-ti-shi-bie-yu-lian-jie/</id>
+        <link href="https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-shi-ti-shi-bie-yu-lian-jie/">
+        </link>
+        <updated>2022-07-10T02:50:54.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="1-实体识别">1 实体识别</h4>
+<p>实体识别是识别文本中的实体，将其划分到指定类型，主要是做实体边界识别和实体分类</p>
+<h5 id="11-实体边界识别">1.1 实体边界识别</h5>
+<p>判断文中的某一串字符串是否是实体</p>
+<h5 id="12-实体分类">1.2 实体分类</h5>
+<p>将实体划分到指定类型</p>
+<h4 id="2-实体链接">2 实体链接</h4>
+<p>实体链接是将文本中的实体指向其所代表的真实世界中的实体，也称为实体消歧<br>
+主要是做如下工作：</p>
+<h5 id="21-识别实体">2.1 识别实体</h5>
+<p>找出文本中需要链接的实体</p>
+<h5 id="22-找出候选目标实体集合">2.2 找出候选目标实体集合</h5>
+<p>识别需要链接的实体在知识图谱中可能所代表的对象集合</p>
+<h5 id="23-找出正确目标实体">2.3 找出正确目标实体</h5>
+<p>基于文本的上下文等信息，对候选目标实体集合按照和需要链接的实体的相似度排序，识别出在知识图谱中的正确的代表对象</p>
+<h5 id="24-空候选目标实体集合">2.4 空候选目标实体集合</h5>
+<p>如果需要链接的对象在知识图谱中没有对应的代表实体，则将文本中的需要链接对象的目标实体设为空实体“NIL”</p>
+<h4 id="3-实体识别与链接面临的问题">3 实体识别与链接面临的问题</h4>
+<h5 id="31-实体名的歧义和多样性">3.1 实体名的歧义和多样性</h5>
+<p>相同实体名有多种表达方式，给实体识别带来困难，需要构建统计上下文模型来实体识别；<br>
+实体链接中需要链接的对象可能存在多个候选目标对象，需要高效的消歧，才能正确链接</p>
+<h5 id="32-资源困乏">3.2 资源困乏</h5>
+<p>有监督模型需要大量训练语料才能达到实用性能，大多数情况下不会有足够的训练语料，因此无监督/半监督模型技术，资源自动构建，迁移学习等是解决关键</p>
+<h5 id="33-实体开放性">3.3 实体开放性</h5>
+<p>实体在变化，规模在扩大，现有的有监督模型无法有效进行实体分析</p>
+<h4 id="4-不同的实体识别和链接方法">4 不同的实体识别和链接方法</h4>
+<h5 id="41-基于传统的统计模型进行实体分析">4.1 基于传统的统计模型进行实体分析</h5>
+<h5 id="42-基于深度学习进行实体分析">4.2 基于深度学习进行实体分析</h5>
+<h5 id="43-基于文本挖掘进行实体分析">4.3 基于文本挖掘进行实体分析</h5>
+<h4 id="5-未来实体分析的发展方向">5 未来实体分析的发展方向</h4>
+<h5 id="51-深度学习加先验知识">5.1 深度学习加先验知识</h5>
+<h5 id="52-研究解决资源匮乏问题">5.2 研究解决资源匮乏问题</h5>
+<h5 id="53-研究解决实体开放性问题">5.3 研究解决实体开放性问题</h5>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[知识图谱的表示与建模]]></title>
+        <id>https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-biao-shi-yu-jian-mo/</id>
+        <link href="https://jiwenlongchina.github.io/post/zhi-shi-tu-pu-de-biao-shi-yu-jian-mo/">
+        </link>
+        <updated>2022-07-08T12:41:55.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="1-什么是知识表示">1 什么是知识表示</h4>
+<p>知识表示与建模宏观上是整个知识图谱构建过程的第一步，具体指将现实世界的概念，实体，事件在计算机中用结构化方式表示。</p>
+<h4 id="2-怎么进行知识表示">2 怎么进行知识表示</h4>
+<p>时代在进步，知识表示的方式也在不断优化。<br>
+在图灵测试时期，提出语义网概念，试图用语义网进行知识表示；<br>
+在专家系统时期，使用基于框架的语言和产生式规则两种方式来进行知识表示；<br>
+在万维网时期，使用描述逻辑语言进行表示，用概念/属性/个体/关系/元语（逻辑描述）等要素表示知识；<br>
+在群体智能时期，语义网进一步发展，使用OWL系列标准化本体语言进行知识表示，其基本数据模型是RDF；<br>
+在知识图谱时期，使用基于低维稠密向量的知识表示模型进行知识表示；</p>
+<h4 id="3-语义网知识表示">3 语义网知识表示</h4>
+<h5 id="31-语义网的基础数据模型">3.1 语义网的基础数据模型</h5>
+<p>语义网的数据模型有RDF，RDFS，OWL</p>
+<h6 id="311-rdf">3.1.1 RDF</h6>
+<p>RDF是有向标记图，箭尾指向主语，箭身是谓语，箭头是宾语<br>
+<img src="https://jiwenlongchina.github.io/post-images/1657287216646.png" alt="" loading="lazy"></p>
+<h6 id="312-rdfs">3.1.2 RDFS</h6>
+<p>RDFS模型比RDF模型多了类型，属性约束</p>
+<h6 id="313-owl">3.1.3 OWL</h6>
+<p>OWL增强了类型和属性约束，新增了<br>
+1）复杂类表达 Complex Classes，如：intersection, union 和 complement 等；<br>
+2）属性约束 Property Restrictions，如：existential quantification,等；<br>
+3）基数约束 Cardinality Restrictions ， 如 : maxQualifiedCardinality 等；<br>
+4）属性特征 PProperty Characteristics，如：inverseOf, SymmetricProperty等；</p>
+<h5 id="32-语义网主要缺点">3.2 语义网主要缺点</h5>
+<p>语义网有计算效率问题，数据稀疏问题</p>
+<h6 id="321-计算效率问题">3.2.1 计算效率问题</h6>
+<p>不同的语义网通常需要专门设计图算法用来计算语义和推理，不能通用；<br>
+基于图的算法复杂度高，可扩展性差；<br>
+知识库规模化后，很难满足实时计算的需求；</p>
+<h6 id="322-数据稀疏问题">3.2.2 数据稀疏问题</h6>
+<p>大规模数据通常遵循长尾分布，对于长尾部分，语义计算和推理不够准确</p>
+<h4 id="4-基于向量的知识表示模型">4 基于向量的知识表示模型</h4>
+<h5 id="41-基于向量的知识表示模型的优点">4.1 基于向量的知识表示模型的优点</h5>
+<p>基于向量的知识表示模型具有计算效率高，适用数据稀疏，可融合多源异质信息的优点</p>
+<h6 id="411-计算效率高">4.1.1 计算效率高</h6>
+<p>使用分布式表示，能高效实现语义相似度等计算，提高效率</p>
+<h6 id="412-适用于数据稀疏">4.1.2 适用于数据稀疏</h6>
+<p>1.每个表示对象的向量都稠密有值，可以度量任何对象之间的相似度；<br>
+2.大量的对象投影到低维空间，可以用其中高频对象的语义帮助低频对象语义表示，提高准确性；</p>
+<h6 id="413-可融合多源异质信息">4.1.3 可融合多源异质信息</h6>
+<p>有了融合多源异质信息的可能，可以将不同的知识库有机融合，使用统一的表示空间</p>
+<h5 id="42-知识表示模型存在的挑战">4.2 知识表示模型存在的挑战</h5>
+<h6 id="421-多源异质信息融合">4.2.1 多源异质信息融合</h6>
+<p>知识表示学习现仅利用知识图谱的三元组结构进行表示学习<br>
+1.知识库中的其他信息没有融合，如类别，属性等；<br>
+2.知识库外的大量信息没有融合，如互联网中的文本；</p>
+<h6 id="422-复杂关系">4.2.2 复杂关系</h6>
+<p>复杂关系指知识库中，关系两端联系的实体数目是1-N，N-1，N-N，处理这些复杂关系时，性能明显下降；</p>
+<h6 id="423-关系路径">4.2.3 关系路径</h6>
+<p>研究表明，实体到实体之间的路径也能反映语义关系，如何突破知识表示学习孤立的学习每个三元组的局限性，成为知识表示学习的关键</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[快速搭建个人博客]]></title>
+        <id>https://jiwenlongchina.github.io/post/kuai-su-da-jian-ge-ren-bo-ke/</id>
+        <link href="https://jiwenlongchina.github.io/post/kuai-su-da-jian-ge-ren-bo-ke/">
+        </link>
+        <updated>2022-07-03T08:59:53.000Z</updated>
+        <content type="html"><![CDATA[<p>使用gridea和github实现快速搭建博客，零代码</p>
+<h4 id="配置github">配置GitHub</h4>
+<h5 id="创建仓库">创建仓库</h5>
+<p>仓库名有格式要求，以用户名+github.io命名，选择Add a README file，完成创建</p>
+<h5 id="配置settings">配置settings</h5>
+<p>→settings→developer settings→personal access token，创建token<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656840473460.png" alt="" loading="lazy"><br>
+note和expiration内容随意编写，选择repo，完成创建<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656840317539.png" alt="" loading="lazy"><br>
+→settings→developer settings→oauth apps，创建oauth app<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656841174027.png" alt="" loading="lazy"><br>
+application name内容随意编写，homepage url和authorization callback url填写你的仓库名，完成创建<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656840877052.png" alt="" loading="lazy"></p>
+<h4 id="下载gridea">下载gridea</h4>
+<h4 id="配置gridea">配置gridea</h4>
+<p>→远程，基础配置按要求填写，域名就是仓库名，token就是github中创建的token<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656841755423.png" alt="" loading="lazy"><br>
+→评论配置，client id和sercet就是oauth app中的内容<br>
+<img src="https://jiwenlongchina.github.io/post-images/1656841900470.png" alt="" loading="lazy"><br>
+→同步，完成个人博客搭建</p>
+]]></content>
+    </entry>
+</feed>
